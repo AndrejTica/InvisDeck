@@ -65,6 +65,17 @@ std::string Deck::randomCard() {
 
 }
 
+void Deck::shuffle() {
+
+	std::random_device rd;
+	std::mt19937 g(rd());
+
+	std::shuffle(cards.begin(), cards.end(), g);
+
+	this->print();
+
+}
+
 
 
 

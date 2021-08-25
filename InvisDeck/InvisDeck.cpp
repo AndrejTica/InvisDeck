@@ -22,7 +22,7 @@ int main()
     std::cout << "\n" << deck.randomCard() << std::endl;
 
     std::cout << "\nShuffled Deck:" << std::endl;
-
+    deck.shuffle();
 
 
     /*
