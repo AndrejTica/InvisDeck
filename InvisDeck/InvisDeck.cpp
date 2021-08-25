@@ -19,7 +19,8 @@ int main()
     Deck deck;
     deck.print();
 
-    std::cout << "\n" << deck.randomCard() << std::endl;
+    std::cout << "\nRandom Card string: " << deck.randomCard() << std::endl;
+    std::cout << "Random Card raw: " << deck.randomCard_raw() << std::endl;
 
     std::cout << "\nShuffled Deck:" << std::endl;
     deck.shuffle();

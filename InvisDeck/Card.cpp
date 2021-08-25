@@ -19,6 +19,11 @@ int Card::rawPrint() {
     return _card;
 }
 
+int Card::getValue(){
+    
+    return _value;
+}
+
 std::string Card::toString() {
 
     std::string suit;

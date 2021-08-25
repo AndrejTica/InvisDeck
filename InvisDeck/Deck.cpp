@@ -40,7 +40,7 @@ Deck::Deck() {
 
 }
 
-void Deck::print() {
+void Deck::print(){
 
 	std::cout << "\n The Deck: \n";
 	int x = 0;
@@ -60,8 +60,15 @@ std::string Deck::randomCard() {
 
 	srand(time(NULL));
 	int random = rand() % cards.size();
-	std::string ret = "Random card is: ";
-	return ret + cards[random].toString();
+	return cards[random].toString();
+
+}
+
+int Deck::randomCard_raw() {
+
+	srand(time(NULL));
+	int random = rand() % cards.size();
+	return cards[random].rawPrint();
 
 }
 
@@ -73,8 +80,24 @@ void Deck::shuffle() {
 	std::shuffle(cards.begin(), cards.end(), g);
 
 	this->print();
+	
+}
+
+void Deck::invisDeck() {
+
+	 int v = this->randomCard_raw()/10;
+	 
+	char string[2];
+	std::cout << "The chosen card is: "<< this->randomCard();
+
+	std::cout << "\nWhat card do we need to search for?";
+	std::cin >> magicCard;
+
+
+	
 
 }
+
 
 
 

@@ -13,9 +13,9 @@ class Card {
 
 private:
 
-	unsigned int _suit;
-	unsigned int _value;
-	unsigned int _card;
+	int _suit;
+	int _value;
+	int _card;
 
 public:
 
@@ -23,6 +23,7 @@ public:
 	Card();
 	std::string toString();
 	int rawPrint();
+	int getValue();
 
 
 };

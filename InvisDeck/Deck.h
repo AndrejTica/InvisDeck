@@ -17,8 +17,10 @@ public:
     Deck();
     void shuffle();
     void print();
-    void newOrder();
     std::string randomCard();
+    int randomCard_raw();
+
+    void invisDeck();
     
 
 };
