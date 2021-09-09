@@ -80,19 +80,28 @@ void Deck::shuffle() {
 	std::shuffle(cards.begin(), cards.end(), g);
 
 	this->print();
-	
 }
 
 void Deck::invisDeck() {
 
-	 int v = this->randomCard_raw()/10;
-	 
-	char string[2];
+	int card = this->randomCard_raw();
+	int v = card / 10;
+	int s = card % 10;
+	int xv;
+	int xs;
+
 	std::cout << "The chosen card is: "<< this->randomCard();
 
 	std::cout << "\nWhat card do we need to search for?";
-	std::cin >> magicCard;
+	std::cin >> xv;
+	//std::cout << "\nWhat card do we need to search for?";
+	//std::cin >> xs;
 
+
+	if (v+xv==13)
+	{
+		std::cout << "Niceu" << std::endl;
+	}
 
 	
 

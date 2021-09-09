@@ -25,6 +25,8 @@ int main()
     std::cout << "\nShuffled Deck:" << std::endl;
     deck.shuffle();
 
+    deck.invisDeck();
+
 
     /*
     

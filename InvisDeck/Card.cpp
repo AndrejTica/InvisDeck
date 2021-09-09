@@ -24,6 +24,14 @@ int Card::getValue(){
     return _value;
 }
 
+int stringToRaw(std::string s) {
+
+    int raw = stoi(s);
+
+
+}
+
+
 std::string Card::toString() {
 
     std::string suit;

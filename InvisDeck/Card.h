@@ -24,6 +24,7 @@ public:
 	std::string toString();
 	int rawPrint();
 	int getValue();
+	int stringToRaw(std::string s);
 
 
 };
